@@ -9,10 +9,14 @@ import java.util.Arrays;
 import java.util.List;
 import java.util.Properties;
 import java.util.stream.Collectors;
+import org.apache.log4j.Logger;
 
 import javax.activation.MimetypesFileTypeMap;
 
 public class FolderService {
+
+    //Logger
+    final static Logger logger = Logger.getLogger(FolderService.class);
     
     public List<FileMetaData> listAllFiles(String folderPath) {
         
